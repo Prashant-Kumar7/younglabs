@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 
 app.use(
     cors({
-      origin: "https://younglabs.tumsab.xyz",
+      origin: "https://younglabs.tumsab.xyz/*",
       methods: ["GET", "POST", "PUT", "DELETE"],
       allowedHeaders: ["Content-Type", "Authorization"],
       credentials: false, 
