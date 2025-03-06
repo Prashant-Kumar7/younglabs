@@ -7,7 +7,7 @@ function App() {
   const [name , setName] = useState("")
 
 function handleClick(){
-  axios.get(`http://localhost:3000/api/greet?name=${name}`).then((res)=>{
+  axios.get(`https://younglabs-backend/api/greet?name=${name}`).then((res)=>{
     setResponse(res.data.message)
   }).catch((err)=>{
     console.log(err)
